@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AliExpress Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-red-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">AliExpress</h1>
+      <input type="text" placeholder="Search for products" class="w-1/2 px-4 py-2 rounded-md text-black" />
+      <button class="bg-white text-red-600 px-4 py-2 rounded-md font-semibold">Cart</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto mt-6 flex">
+    
+    <!-- Sidebar Categories -->
+    <aside class="w-1/4 p-4 bg-white rounded shadow">
+      <h2 class="text-lg font-semibold mb-2">Categories</h2>
+      <ul class="space-y-2">
+        <li><a href="#" class="text-gray-700 hover:text-red-600">Electronics</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-red-600">Fashion</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-red-600">Home & Garden</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-red-600">Toys</a></li>
+        <li><a href="#" class="text-gray-700 hover:text-red-600">Beauty</a></li>
+      </ul>
+    </aside>
+
+    <!-- Product Grid -->
+    <section class="w-3/4 p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <!-- Product Card -->
+      <div class="bg-white rounded shadow p-4">
+        <img src="https://zerolifestyle.co/cdn/shop/files/ad07withouttext.webp?v=1736171250&width=300" alt="Product" class="w-full h-40 object-cover rounded" />
+        <h3 class="mt-2 font-semibold text-gray-800">Smart Watch</h3>
+        <p class="text-red-600 font-bold">$19.99</p>
+      </div>
+
+      <div class="bg-white rounded shadow p-4">
+        <img src="data:image/jpeg;base64,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" alt="Product" class="w-full h-40 object-cover rounded" />
+        <h3 class="mt-2 font-semibold text-gray-800">Bluetooth Headphones</h3>
+        <p class="text-red-600 font-bold">$14.99</p>
+      </div>
+
+      <div class="bg-white rounded shadow p-4">
+        <img src="https://img.drz.lazcdn.com/static/pk/p/b8f32bd911981989c004d4f213b5937e.jpg_200x200q80.avif" alt="Product" class="w-full h-40 object-cover rounded" />
+        <h3 class="mt-2 font-semibold text-gray-800">LED Strip Lights</h3>
+        <p class="text-red-600 font-bold">$9.99</p>
+      </div>
+
+      <div class="bg-white rounded shadow p-4">
+        <img src="https://img.drz.lazcdn.com/static/pk/p/005728ac7440e9cf2b097f58f4c43398.jpg_200x200q80.avif" alt="Product" class="w-full h-40 object-cover rounded" />
+        <h3 class="mt-2 font-semibold text-gray-800">USB Charger</h3>
+        <p class="text-red-600 font-bold">$4.99</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+    © 2025 AliExpress Clone | Created by rafay sheikh.
+  </footer>
+
+</body>
+</html>
